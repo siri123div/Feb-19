@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s{
+            height: 650px;
+            width: 500px;
+            background-color: aquamarine;
+            border: 1px solid;
+        }
+        .px{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            background-color: darksalmon;
+            gap: 20px;
+        }
+        .d{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            margin-top: 10px;
+        }
+        .r{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            background-color: darksalmon;
+            margin-top: 10px;
+        }
+        button:active~.px{
+            background-color: aqua;
+            transition-property: background-color;
+            transition-duration: 1s;
+            transform: translate(300px) rotate(120deg);
+            gap: 20px; 
+            }
+        button:active~.d{
+            background-color:blue;
+            transition-property: background-color;
+            transition-duration: 1s;
+            transform: translate(100px) rotate(120deg); 
+        }
+        button:active~.r{
+            transform: rotate3d(50deg);
+            transform: translate(400px);
+        }
+ </style>
+</head>
+<body>
+    <div class="s">
+    <button>click here</button>
+    <div class="px"><img src="./clouds.jpg" height="200px" width="200px"></div>
+    <div class="d"><img src="./himalayas.jpg" height="200px" width="200px"></div>
+    <div class="r"><img src="./nature.jpg" height="200px" width="200"></div>
+</div>
+
+    
+    </div>
+    
+</body>
+</html>
